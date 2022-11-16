@@ -68,6 +68,7 @@ class STrack(BaseTrack):
         if new_id:
             self.track_id = self.next_id()
         self.score = new_track.score
+        self.det_id = new_track.det_id
 
     def update(self, new_track, frame_id):
         """
